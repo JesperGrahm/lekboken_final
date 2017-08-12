@@ -1,0 +1,49 @@
+body {
+  font-family: 'Saira Semi Condensed', sans-serif;
+}
+.nav {
+  background-color: #fca0ba;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 5px 5px #888888;
+}
+.nav>a {
+  text-decoration: none;
+  color: black;
+}
+.navlink>a:hover {
+  background-color: #e28fa7;
+}
+.nav-link {
+  color: black;
+  display: flex;
+  align-items: center;
+}
+.navActive {
+  background-color: #e28fa7;
+}
+.logo {
+  font-family: 'Schoolbell', cursive;
+  font-size: 45px;
+}
+.grid {
+  width: 60%;
+}
+.col {
+  border: 1px solid transparent;
+  text-align: center;
+  background-color: #ededed;
+}
+.col>a {
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
+}
+.text {
+  width: 60%;
+}
+.img-fluid {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
