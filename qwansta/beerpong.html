@@ -17,18 +17,39 @@
   <!-- Main CSS -->
   <link href="../css/main.css" rel="stylesheet">
 
-  <link href="https://fonts.googleapis.com/css?family=Saira+Semi+Condensed|Schoolbell" rel="stylesheet">
-  <link rel="shortcut icon" href="../favicon.ico" />
+  <link href="https://fonts.googleapis.com/css?family=Saira+Semi+Condensed|Schoolbell|Gloria+Hallelujah" rel="stylesheet">
+  <link rel="shortcut icon" href="../images/favicon.ico" />
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
 </head>
 
 <body>
-  <nav class="nav nav-pills nav-justified">
-    <a class="logo ml-4 mr-4" href="../index.html">Lekboken</a>
-    <a class="nav-link m-2" href="../lekar/index.html">Lekar</a>
-    <a class="nav-link m-2" href="../kategorier/index.html">Kategorier</a>
-    <a class="nav-link m-2 navActive" href="">Regler</a>
-  </nav>
-  <div class="container text mx-auto mt-5">
+  <div class="navbar navbar-inverse pb-0 pt-0">
+    <div class="navbrand ml-3 pt-3 pb-3">
+      <a class="navbar-brand pl-1 pr-0" href="../index.html">Lekboken</a>
+    </div>
+    <div class="container pt-0 mr-4">
+      <button type="button" class="navbar-toggle ml-auto" data-toggle="collapse" data-target=".navbar-collapse	">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+    </div>
+    <div class="navbar-collapse collapse px-0 mr-auto col-md-3">
+      <ul class="nav nav-pills justify-content-center">
+        <li class="li"><a class="nav-link m-2" href="../lekar/index.html">Lekar</a></li>
+        <li class="li"><a class="nav-link m-2" href="../kategorier/index.html">Kategorier</a></li>
+        <li class="li"><a class="nav-link m-2 navActive" href="../qwansta/index.html">Regler</a></li>
+      </ul>
+
+    </div>
+
+  </div>
+
+  <div class="text mx-auto mt-5">
     <h1 class="text-center">Beerpong</h1>
     <p class="text-left mt-3 mb-5">
       <b>Antal spelare</b><br/> 2-6 st <br/><br/>
@@ -41,9 +62,9 @@
       någon annan överenskommen längd. Om man spelar på ön i en Spartakorridor(t.ex G6) är det rumpan mot bakre köksbänk på varje sida som gäller.
       <br/><br/>
       <b>Studs:</b> Om man studsar en boll i bordet och den landar i en kopp, får motståndarna dricka två koppar.
-        <br/><br/>
-      <b>Vid träff med båda bollarna:</b> Om två bollar landar i samma kopp får de försvarande dricka två koppar och det attackerande laget får båda bollarna tillbaka. Liknande, om två bollar landar i två olika koppar dricks de kopparna och det
-      attackerande laget får en boll tillbaka.
+      <br/><br/>
+      <b>Vid träff med båda bollarna:</b> Om två bollar landar i samma kopp får de försvarande dricka två koppar och det attackerande laget får båda bollarna tillbaka. Liknande, om två bollar landar i två olika koppar dricks de kopparna och det attackerande
+      laget får en boll tillbaka.
       <br/><br/>
       <b>Försvar:</b> Om en boll studsar i bordet (eller träffar kanten av en kopp) får det försvarande laget slå bort bollen med händerna. Dock, om det försvarande laget råkar nudda en boll i luften (innan studs) får de dricka en kopp. Om en boll börjar
       snurra på insidan av en kopp får man blåsa upp den. Om den inte nuddar drickan är koppen inte satt.
