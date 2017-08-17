@@ -88,7 +88,10 @@ body {
 
 @media (max-width: 768px) {
   .li {
-    padding-left: 3.5%;
-    padding-right: 3.5%;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+  .text {
+    width: 80%;
   }
 }
