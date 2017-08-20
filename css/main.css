@@ -112,6 +112,9 @@ body {
   .regeltext {
     width: 90% !important;
   }
+  .col {
+    height: 8vh;
+  }
 }
 
 .row {
