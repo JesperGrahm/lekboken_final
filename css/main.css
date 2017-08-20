@@ -33,10 +33,16 @@ body {
   min-width: 200px;
   text-decoration: none !important;
   color: black !important;
-  font-size: 225%;
+  font-size: 2.2vw;
   padding-left: 30px;
   padding-right: 30px;
   cursor: pointer;
+  flex-grow: 1;
+  min-width: 25%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 11vh;
 }
 
 .col:hover {
@@ -47,10 +53,16 @@ body {
   width: 60%;
 }
 
-.img-fluid {
+.backgroundimg {
   display: block;
   max-width: 100%;
   height: auto;
+  position: absolute;
+  opacity: 0.15;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
 }
 
 .navbar {
@@ -94,4 +106,52 @@ body {
   .text {
     width: 80%;
   }
+  .fronttext {
+    width: 80%;
+  }
+  .regeltext {
+    width: 80%;
+  }
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.fronttext {
+  width: 60%;
+  font-size: 135%;
+  position: relative;
+  z-index: 0;
+}
+
+.fronttext a, .fronttext a:hover{
+  text-decoration: none !important;
+}
+
+.text a, .text a:hover {
+  text-decoration: none !important;
+}
+
+.glatt {
+  text-align: center;
+  font-size: 170%;
+}
+
+.googleforms {
+  text-align: center;
+}
+
+.regeltext {
+  width: 60%;
+  font-size: 120%;
+}
+
+.imgwrapper {
+  width: 40%;
+}
+
+.imgwrapperbluff {
+  width: 20%;
 }

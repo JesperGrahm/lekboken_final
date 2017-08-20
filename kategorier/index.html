@@ -23,6 +23,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
 	<script>
 		(function(i, s, o, g, r, a, m) {
 			i['GoogleAnalyticsObject'] = r;
@@ -55,14 +56,27 @@
 		</div>
 		<div class="navbar-collapse collapse px-0 mr-auto col-md-3">
 			<ul class="nav nav-pills justify-content-center">
-				<li class="li"><a class="nav-link m-2" href="../lekar/index.html">Lekar</a></li>
-				<li class="li"><a class="nav-link m-2 navActive" href="">Kategorier</a></li>
+				<li class="li"><a class="nav-link m-2" href="">Lekar</a></li>
+				<li class="li"><a class="nav-link m-2 navActive" href="../kategorier/index.html">Kategorier</a></li>
 				<li class="li"><a class="nav-link m-2" href="../qwansta/index.html">Regler</a></li>
 			</ul>
 
 		</div>
 
 	</div>
+	<div class="container-fluid mt-5">
+    <div class="row justify-content-center">
+      <div class="col border border-dark rounded pt-2 pb-2 m-2" onclick="window.document.location='./kortspel.html';">
+        <span>Kortspel</span>
+      </div>
+      <div class="col border border-dark rounded pt-2 pb-2 m-2" onclick="window.document.location='./verbalarorelselekar.html';">
+        <span>Verbala lekar, rörelselekar</span>
+      </div>
+      <div class="col border border-dark rounded pt-2 pb-2 m-2" onclick="window.document.location='./ovrigalekar.html';">
+        <span>Övriga lekar</span>
+      </div>
+    </div>
+  </div>
 
 </body>
 
