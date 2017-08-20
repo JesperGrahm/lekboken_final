@@ -104,13 +104,13 @@ body {
     padding-right: 3%;
   }
   .text {
-    width: 90%;
+    width: 90% !important;
   }
   .fronttext {
-    width: 90%;
+    width: 90% !important;
   }
   .regeltext {
-    width: 90%;
+    width: 90% !important;
   }
 }
 
