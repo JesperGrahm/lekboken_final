@@ -117,6 +117,12 @@ body {
   }
 }
 
+@media (max-width: 500px) {
+  .col {
+    height: 6vh;
+  }
+}
+
 .row {
   display: flex;
   flex-wrap: wrap;
