@@ -1,0 +1,20 @@
+.body {
+  background-color: pink;
+}
+
+.container {
+  width: 40%;
+  margin: auto;
+}
+
+.pin {
+  font-size: 150px;
+  margin-top: 20%;
+  text-align: center;
+}
+
+.text {
+  font-size: 75px;
+  margin-top: 10%;
+  text-align: center;
+}
