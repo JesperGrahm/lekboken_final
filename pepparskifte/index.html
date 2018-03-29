@@ -29,83 +29,42 @@
 
 <body class="body">
 
-  <div class='container'>
+		<p id='showTime'></p>
 
-		<!--<input type="text" class="form-control" id="number1" oninput="numbersonly('1')" maxlength="1">
+		<script>
+		// Set the date we're counting down to
+		//var inputTime = window.sessionStorage.getItem("inputTime");
+		/*var timeArray = time.split(":");
+		var countDownDate = new Date().getTime();
+		countDownDate.setHours(parseInt(timeArray[0]));
+		countDownDate.setMinutes(parseInt(timeArray[1]));
+		countDownDate.setSeconds(parseInt(timeArray[2]));
 
-    <input type="text" class="form-control" id="number2" oninput="numbersonly('2')" maxlength="1">
+		var x = setInterval(startTimer(), 1000);
+		// Update the count down every 1 second
 
-    <input type="text" class="form-control" id="number3" oninput="numbersonly('3')" maxlength="1">
+		function startTimer() {
 
-    <input type="text" class="form-control" id="number4" oninput="numbersonly('4')" maxlength="1">
+		// Get todays date and time
+		var now = new Date().getTime();
+		// Find the distance between now an the count down date
+		var distance = countDownDate - now;
 
-    <button class="btn btn-default" id="button" type="submit" onclick="check()">Enter</button>-->
-		<h1 class='text' id='text'>Skriv in koden</h1>
+		// Time calculations for days, hours, minutes and seconds
+		var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+		var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-		<p class='pin col-sm-3' id='number1'></p>
+		// Display the result in the element with id="demo"
+		document.getElementById("showTime").innerHTML = hours + "h "
+		+ minutes + "m " + seconds + "s ";
 
-		<p class='pin col-sm-3' id='number2'></p>
-
-		<p class='pin col-sm-3' id='number3'></p>
-
-		<p class='pin col-sm-3' id='number4'></p>
-
-
-    <script>
-
-		var input = '';
-
-		document.addEventListener("keydown", function(event) {
-    if (event.keyCode >= 48 && event.keyCode <= 57) {
-        input = input.concat(String.fromCharCode(event.keyCode))
-				if (input == '1337') {
-					document.getElementById('text').innerHTML = "Rätt kod!";
-					fadeIn(document.getElementById('text'));
-					setTimeout(cleanse, 1000);
-				} else if (input.length == 4) {
-					document.getElementById('text').innerHTML = "Fel kod!";
-					fadeIn(document.getElementById('text'));
-					setTimeout(cleanse, 1000);
-				}
-    } else if (event.keyCode == 8) {
-				document.getElementById('number' + (input.length)).innerHTML = '';
-    		input = input.slice(0, -1);
-    }
-		showInput()
-
-	});
-
-		function showInput() {
-			var localInput = input;
-			var i = 1;
-			while(localInput.length != 0) {
-				document.getElementById('number' + i).innerHTML = localInput.charAt(0);
-				localInput = localInput.substr(1);
-				i++;
-			}
+		// If the count down is finished, write some text
+		if (distance < 0) {
+		  clearInterval(x);
+		  document.getElementById("showTime").innerHTML = "EXPIRED";
 		}
-
-		function cleanse() {
-			input = '';
-			document.getElementById('number1').innerHTML = '';
-			document.getElementById('number2').innerHTML = '';
-			document.getElementById('number3').innerHTML = '';
-			document.getElementById('number4').innerHTML = '';
-		}
-
-		function fadeIn(element) {
-    var op = 0.1;  // initial opacity
-    element.style.display = 'block';
-    var timer = setInterval(function () {
-        if (op >= 1){
-            clearInterval(timer);
-        }
-        element.style.opacity = op;
-        element.style.filter = 'alpha(opacity=' + op * 100 + ")";
-        op += op * 0.1;
-    }, 50);
-}
-
+	}*/
     </script>
   </div>
 </body>

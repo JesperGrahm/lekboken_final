@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Alla de bästa lekarna samlade på ett ställe!">
+	<meta name="author" content="Jesper Grahm">
+
+	<title>Pepparskifte</title>
+
+	<!-- Bootstrap core CSS -->
+	<link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Main CSS -->
+	<link href="stylesheet.css" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css?family=Saira+Semi+Condensed|Schoolbell|Gloria+Hallelujah" rel="stylesheet">
+	<link rel="shortcut icon" href="./images/favicon.ico" />
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+</head>
+
+<body class="body">
+
+  <div class='container'>
+
+		<h2 class='text' id='text'>Skriv in koden</h1>
+
+		<p class='pin col-sm-3' id='number1'></p>
+
+		<p class='pin col-sm-3' id='number2'></p>
+
+		<p class='pin col-sm-3' id='number3'></p>
+
+		<p class='pin col-sm-3' id='number4'></p>
+
+
+    <script>
+
+		var input = '';
+
+		document.addEventListener("keydown", function(event) {
+    if (event.keyCode >= 48 && event.keyCode <= 57) {
+        input = input.concat(String.fromCharCode(event.keyCode))
+				if (input == '4729') {
+					document.getElementById('text').innerHTML = "Rätt kod!";
+					fadeIn(document.getElementById('text'));
+					setTimeout(cleanse, 1000);
+					window.location = "http://lekboken.com/pepparskifte/hemlig2.html";
+				} else if (input.length == 4) {
+					document.getElementById('text').innerHTML = "Fel kod!";
+					fadeIn(document.getElementById('text'));
+					setTimeout(cleanse, 1000);
+				}
+    } else if (event.keyCode == 8) {
+				document.getElementById('number' + (input.length)).innerHTML = '';
+    		input = input.slice(0, -1);
+    }
+		showInput()
+
+	});
+
+		function showInput() {
+			var localInput = input;
+			var i = 1;
+			while(localInput.length != 0) {
+				document.getElementById('number' + i).innerHTML = localInput.charAt(0);
+				localInput = localInput.substr(1);
+				i++;
+			}
+		}
+
+		function cleanse() {
+			input = '';
+			document.getElementById('number1').innerHTML = '';
+			document.getElementById('number2').innerHTML = '';
+			document.getElementById('number3').innerHTML = '';
+			document.getElementById('number4').innerHTML = '';
+		}
+
+		function fadeIn(element) {
+    var op = 0.1;  // initial opacity
+    element.style.display = 'block';
+    var timer = setInterval(function () {
+        if (op >= 1){
+            clearInterval(timer);
+        }
+        element.style.opacity = op;
+        element.style.filter = 'alpha(opacity=' + op * 100 + ")";
+        op += op * 0.1;
+    }, 50);
+}
+
+    </script>
+  </div>
+</body>
+
+</html>
